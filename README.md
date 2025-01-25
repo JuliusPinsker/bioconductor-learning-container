@@ -19,17 +19,19 @@ This repository provides a fully containerized development environment for the P
 
 ## Prerequisites
 
-- Docker
-- (Optional) Visual Studio Code
-- (Optional) Remote Containers Extension
+- Docker or Podman
+- Docker-compose or Podman-compose
 
 ## Quick Start
 
-<!-- ### Docker Compose Method -->
 ```bash
 docker compose build
 docker compose up -d
 ```
+
+**Addendum**: You can also run these commands with Podman. In fact, Podman is recommended for its enhanced security—thanks to rootless container support—and its more flexible licensing model.
+
+
 Access RStudio at: `http://localhost:8787`
 - **Username**: rstudio
 - **Password**: rstudio
