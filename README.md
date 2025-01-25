@@ -25,7 +25,7 @@ This repository provides a fully containerized development environment for the P
 
 ## Quick Start
 
-### Docker Compose Method
+<!-- ### Docker Compose Method -->
 ```bash
 docker compose build
 docker compose up -d
@@ -34,9 +34,9 @@ Access RStudio at: `http://localhost:8787`
 - **Username**: rstudio
 - **Password**: rstudio
 
-### VSCode DevContainer Method
+<!-- ### VSCode DevContainer Method
 1. Open project in VSCode
-2. Click "Reopen in Container" when prompted
+2. Click "Reopen in Container" when prompted -->
 
 ## Current Status
 

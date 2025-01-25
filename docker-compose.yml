@@ -1,23 +1,16 @@
-version: "3.8"
+# You can remove the "version: '3.8'" line if Compose complains it is obsolete:
+# version: "3.8"
+
 services:
   rstudio:
     container_name: rstudio
     build:
       context: .
       dockerfile: Dockerfile
-    image: rstudio-custom
+    image: rstudio-genomics
     ports:
       - "8787:8787"
     volumes:
       - ./data:/home/rstudio/data
-      - /proc:/proc  # Mount proc filesystem to allow resource detection
     environment:
-      - PASSWORD=rstudio
-      - USERID=1000
-      - GROUPID=1000
-    # Optional: set resource limits if you want hard caps
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: '4'  # Limit to 4 CPU cores if desired
-    #       memory: 8G  # Limit to 8GB of memory if desired
+      - PASSWORD=rstudio   # Or set a safer password for production
