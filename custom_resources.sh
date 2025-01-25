@@ -28,3 +28,5 @@ else
 fi
 
 echo "-------------------------------"
+echo ""
+echo "Access the RStudio server via http://localhost:8787/"
