@@ -41,15 +41,3 @@ RUN R -e "options(timeout=Inf); BiocManager::install(c( \
 # before dropping down to 'rstudio' user.
 COPY custom_resources.sh /etc/cont-init.d/custom_resources.sh
 RUN chmod +x /etc/cont-init.d/custom_resources.sh
-
-################################################
-# (Optional) switch to rstudio user at the end
-# The Rocker/Bioconductor base image normally does
-# this automatically inside /init, so it is also okay
-# to omit this `USER` line if you wish.
-################################################
-USER rstudio
-
-# NOTE: We do NOT override ENTRYPOINT or CMD.
-# The base image provides ENTRYPOINT /init via s6-overlay.
-# That is what sets up permissions and then launches RStudio.
