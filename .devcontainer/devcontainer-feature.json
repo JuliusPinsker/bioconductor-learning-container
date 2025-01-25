@@ -1,0 +1,25 @@
+{
+    "name": "R Development Environment",
+    "id": "r-dev-env",
+    "version": "1.0.0",
+    "description": "A comprehensive R development environment with RStudio and VSCode integration",
+    "documentationURL": "https://github.com/your-repo/r-dev-container",
+    "keywords": [
+        "R",
+        "RStudio",
+        "data science",
+        "bioinformatics"
+    ],
+    "options": {
+        "installBioconductor": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Bioconductor packages"
+        },
+        "additionalPackages": {
+            "type": "string",
+            "default": "",
+            "description": "Comma-separated list of additional R packages to install"
+        }
+    }
+}
