@@ -29,7 +29,7 @@ docker compose build
 docker compose up -d
 ```
 
-**Addendum**: You can also run these commands with Podman. In fact, Podman is recommended for its enhanced security—thanks to rootless container support—and its more flexible licensing model.
+**Addendum**: You can also run these commands with Podman. In fact, Podman is recommended for its enhanced security—thanks to rootless and daemonless architecture and its more flexible licensing model.
 
 
 Access RStudio at: `http://localhost:8787`
